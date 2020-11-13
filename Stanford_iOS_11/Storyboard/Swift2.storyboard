@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EJO-s7-kPF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift2VC-->
+        <scene sceneID="Ri0-bY-BDM">
+            <objects>
+                <viewController id="EJO-s7-kPF" customClass="Swift2VC" customModule="Stanford_iOS_11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0e1-GL-rrC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="pbY-Vw-OS3">
+                                <rect key="frame" x="41.5" y="74" width="331" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-xE-nhF">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Collection1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchCollection:" destination="EJO-s7-kPF" eventType="touchUpInside" id="cR2-Ue-PAi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-Va-AR0">
+                                        <rect key="frame" x="87" y="0.0" width="69.5" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Collection2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchCollection:" destination="EJO-s7-kPF" eventType="touchUpInside" id="SRE-Eo-QMq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BG-UN-Y37">
+                                        <rect key="frame" x="174.5" y="0.0" width="69.5" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Collection3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchCollection:" destination="EJO-s7-kPF" eventType="touchUpInside" id="SYj-tf-GzP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl5-um-nNP">
+                                        <rect key="frame" x="262" y="0.0" width="69" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Collection4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchCollection:" destination="EJO-s7-kPF" eventType="touchUpInside" id="4AS-3k-wqp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7g1-Sl-mSu"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6L-78-ksZ">
+                                <rect key="frame" x="186.5" y="811.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NMf-om-gjB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbY-Vw-OS3" firstAttribute="top" secondItem="NMf-om-gjB" secondAttribute="top" constant="30" id="70i-7h-zTe"/>
+                            <constraint firstItem="e6L-78-ksZ" firstAttribute="centerX" secondItem="0e1-GL-rrC" secondAttribute="centerX" id="FaH-wW-0mk"/>
+                            <constraint firstItem="pbY-Vw-OS3" firstAttribute="centerX" secondItem="0e1-GL-rrC" secondAttribute="centerX" id="NhN-VV-79B"/>
+                            <constraint firstItem="NMf-om-gjB" firstAttribute="bottom" secondItem="e6L-78-ksZ" secondAttribute="bottom" constant="30" id="VRe-6a-hkn"/>
+                            <constraint firstItem="pbY-Vw-OS3" firstAttribute="width" secondItem="0e1-GL-rrC" secondAttribute="width" multiplier="0.8" id="WFB-fs-jGH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flipCountLabel" destination="e6L-78-ksZ" id="2h3-ml-Wcc"/>
+                        <outletCollection property="cardButton" destination="OLq-xE-nhF" collectionClass="NSMutableArray" id="KDQ-0D-C2H"/>
+                        <outletCollection property="cardButton" destination="jCB-Va-AR0" collectionClass="NSMutableArray" id="XNQ-Em-pbW"/>
+                        <outletCollection property="cardButton" destination="2BG-UN-Y37" collectionClass="NSMutableArray" id="1G2-LB-jQK"/>
+                        <outletCollection property="cardButton" destination="xl5-um-nNP" collectionClass="NSMutableArray" id="yt1-fr-pXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUb-R9-A4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

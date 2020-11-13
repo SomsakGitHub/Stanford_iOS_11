@@ -18,6 +18,10 @@
 		FE55CAE925494E9B0025C1FC /* Stanford_iOS_11UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE55CAE825494E9B0025C1FC /* Stanford_iOS_11UITests.swift */; };
 		FE55CAFF2549526F0025C1FC /* Swift1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE55CAFE2549526F0025C1FC /* Swift1VC.swift */; };
 		FE55CB04254952840025C1FC /* Swift1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE55CB03254952840025C1FC /* Swift1.storyboard */; };
+		FEC0640825528F28007C3BBD /* Swift2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0640725528F27007C3BBD /* Swift2.storyboard */; };
+		FEC0640E25529014007C3BBD /* Swift2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0640D25529014007C3BBD /* Swift2VC.swift */; };
+		FEC0641725529353007C3BBD /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0641625529353007C3BBD /* Concentration.swift */; };
+		FEC0641F255293E3007C3BBD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0641E255293E3007C3BBD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		FE55CAEA25494E9B0025C1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE55CAFE2549526F0025C1FC /* Swift1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift1VC.swift; sourceTree = "<group>"; };
 		FE55CB03254952840025C1FC /* Swift1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swift1.storyboard; sourceTree = "<group>"; };
+		FEC0640725528F27007C3BBD /* Swift2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swift2.storyboard; sourceTree = "<group>"; };
+		FEC0640D25529014007C3BBD /* Swift2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift2VC.swift; sourceTree = "<group>"; };
+		FEC0641625529353007C3BBD /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		FEC0641E255293E3007C3BBD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 			children = (
 				FE55CAFA254952070025C1FC /* Storyboard */,
 				FE55CB08254952880025C1FC /* Swift1 */,
+				FEC0640C25528FEC007C3BBD /* Swift2 */,
 				FE55CAF9254951060025C1FC /* SupportingFiles */,
 				FE55CAC725494E990025C1FC /* ViewController.swift */,
 				FE55CAC925494E990025C1FC /* Main.storyboard */,
@@ -149,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FE55CB03254952840025C1FC /* Swift1.storyboard */,
+				FEC0640725528F27007C3BBD /* Swift2.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -159,6 +169,24 @@
 				FE55CAFE2549526F0025C1FC /* Swift1VC.swift */,
 			);
 			path = Swift1;
+			sourceTree = "<group>";
+		};
+		FEC0640C25528FEC007C3BBD /* Swift2 */ = {
+			isa = PBXGroup;
+			children = (
+				FEC064152552932D007C3BBD /* Concentration */,
+				FEC0640D25529014007C3BBD /* Swift2VC.swift */,
+			);
+			path = Swift2;
+			sourceTree = "<group>";
+		};
+		FEC064152552932D007C3BBD /* Concentration */ = {
+			isa = PBXGroup;
+			children = (
+				FEC0641625529353007C3BBD /* Concentration.swift */,
+				FEC0641E255293E3007C3BBD /* Card.swift */,
+			);
+			path = Concentration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +294,7 @@
 			files = (
 				FE55CAD325494E9A0025C1FC /* LaunchScreen.storyboard in Resources */,
 				FE55CAD025494E9A0025C1FC /* Assets.xcassets in Resources */,
+				FEC0640825528F28007C3BBD /* Swift2.storyboard in Resources */,
 				FE55CB04254952840025C1FC /* Swift1.storyboard in Resources */,
 				FE55CACB25494E990025C1FC /* Main.storyboard in Resources */,
 			);
@@ -293,10 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE55CACE25494E990025C1FC /* Stanford_iOS_11.xcdatamodeld in Sources */,
+				FEC0641725529353007C3BBD /* Concentration.swift in Sources */,
+				FEC0640E25529014007C3BBD /* Swift2VC.swift in Sources */,
 				FE55CAC825494E990025C1FC /* ViewController.swift in Sources */,
 				FE55CAC425494E990025C1FC /* AppDelegate.swift in Sources */,
 				FE55CAFF2549526F0025C1FC /* Swift1VC.swift in Sources */,
 				FE55CAC625494E990025C1FC /* SceneDelegate.swift in Sources */,
+				FEC0641F255293E3007C3BBD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
